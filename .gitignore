@@ -1,0 +1,5 @@
+packages/*
+winbuild
+build
+.vscode
+bin/*
