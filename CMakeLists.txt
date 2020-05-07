@@ -7,6 +7,7 @@ set(EXECUTABLE_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 addproject("command-line-interface")
 addproject("command-handler")
+addproject("web-server")
 
 set(IncludeDir "${CMAKE_CURRENT_SOURCE_DIR}/Include/")
 set(SourceDir "${CMAKE_CURRENT_SOURCE_DIR}/src/")
