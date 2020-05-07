@@ -53,3 +53,12 @@ function(genlib)
         set(MADE_LIBRARY_BUILD TRUE PARENT_SCOPE)
     endif()
 endfunction()
+
+function(incl_tools)
+    SET(INCL_PATH ${SOURCE_DIR}/tools)
+    if(NOT EXISTS ${SOURCE_DIR}/tools)
+        SET(INCL_PATH ${SOURCE_DIR}/../../tools)
+    endif()
+
+    SET(IncludeDirs ${IncludeDirs} ${INCL_PATH} PARENT_SCOPE)
+endfunction()

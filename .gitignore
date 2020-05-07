@@ -3,3 +3,4 @@ winbuild
 build
 .vscode
 bin/*
+tools/*
